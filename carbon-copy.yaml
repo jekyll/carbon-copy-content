@@ -1,0 +1,5 @@
+---
+files:
+- path: .travis.yml
+  destination_repos:
+  - jekyll/paginate
