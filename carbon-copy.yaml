@@ -1,5 +1,11 @@
----
+# Call this file 'carbon-copy.yaml' in your repository.
+# In it, specify the files which you'd like to be copied.
+
+plugin_repos: &plugin_repos
+- jekyll/github-metadata
+
 files:
-- path: .travis.yml
-  destination_repos:
-  - jekyll/paginate
+  '.travis.yml':
+    destination_repos: *plugin_repos
+  'CODE_OF_CONDUCT.md':
+    destination_repos: *plugin_repos
