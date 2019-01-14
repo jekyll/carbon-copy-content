@@ -22,6 +22,4 @@ before_script: bundle update
 script: script/cibuild
 
 notifications:
-  email:
-    on_success: never
-    on_failure: never
+  email: false
